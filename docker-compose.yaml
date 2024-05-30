@@ -1,0 +1,9 @@
+services:
+  web-fe:
+    build: .
+    ports:
+      - 5001:5000
+  redis:
+    image: "redis:alpine"
+    ports:
+      - 6379
